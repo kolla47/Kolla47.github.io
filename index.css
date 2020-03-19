@@ -191,7 +191,7 @@ body,html {
 
 .progress-content {
     height: 21px;
-    background-color: #ff8d91 ;
+    background-color: #ff2830;
     width: 0%; /* Initial value */
 }
 
@@ -295,7 +295,7 @@ body,html {
     font-size: 45px;
 }
 .social {
-    color:rgb(255, 44, 90);
+    color:#ff464d;
     font-size:35px;
     padding:12px 17px;
     border-radius:50%;
@@ -333,6 +333,7 @@ body,html {
     #tagline {
         width:90%;
         font-size:30px;
+        padding-left: 25px;
     }
     .btn_one {
         font-size:14px;

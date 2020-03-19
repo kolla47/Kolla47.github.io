@@ -32,21 +32,32 @@ setTimeout(function(){
     },800);
 },1450);
 
+
+var skillsDiv = jQuery('#skills');
+
+jQuery(window).on('scroll', function() {
+  var winT = jQuery(window).scrollTop(),
+    winH = jQuery(window).height(),
+    skillsT = skillsDiv.offset().top;
+  if (winT + winH > skillsT) {
+    jQuery('.progress-bar').each(function() {
+      jQuery(this).find('.progress-content').animate({
+        width:jQuery(this).attr('data-percentage')
+      },2000);
+      
+      jQuery(this).find('.progress-number-mark').animate(
+        {left:jQuery(this).attr('data-percentage')},
+        {
+         duration: 2000,
+         step: function(now, fx) {
+           var data = Math.round(now);
+           jQuery(this).find('.percent').html(data + '%');
+         }
+      });  
+    });
+  }
+});
 jQuery(document).ready(function(){
   
-  jQuery('.progress-bar').each(function() {
-    jQuery(this).find('.progress-content').animate({
-      width:jQuery(this).attr('data-percentage')
-    },2000);
-    
-    jQuery(this).find('.progress-number-mark').animate(
-      {left:jQuery(this).attr('data-percentage')},
-      {
-       duration: 2000,
-       step: function(now, fx) {
-         var data = Math.round(now);
-         jQuery(this).find('.percent').html(data + '%');
-       }
-    });  
-  });
+  
 });
