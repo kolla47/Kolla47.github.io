@@ -307,8 +307,7 @@ body,html {
 .social:hover { 
     cursor: pointer;
     color:#fff;
-    background:rgb(255, 44, 90);
-    box-shadow: rgba(255, 66, 107,0.8);
+    background:#ff464d;
 }
 @media (max-width: 900px){
     #header {
