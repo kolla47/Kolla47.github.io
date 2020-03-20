@@ -207,6 +207,10 @@ body,html {
     font-size: 13px;
     font-style: italic;
 }
+
+.git-but{
+    font-size: 20px;
+}
 #contact {
     margin:4vh 0px !important;
     padding:2vh 0px !important;
