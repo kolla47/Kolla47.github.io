@@ -311,11 +311,11 @@
             </div>
             <div id="contact">
                 <h1>contact.</h1>
-                <form>
-                    <input type="text" placeholder="name" required>
-                    <input type="email" placeholder="email" required><br>
-                    <textarea placeholder="your message" required rows="5"></textarea><br>
-                    <button class="btn_one">send</button>
+                <form id="form_id">
+                    <input name="name" type="text" placeholder="name" required>
+                    <input name="email" type="email" placeholder="email" required><br>
+                    <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                    <button type="submit" id="submit" class="btn_one">Send</button>
                 </form>
             </div>
         </div>
@@ -323,5 +323,12 @@
             made by <br><br> <a href="https://github.com/kolla47">TRINOX</a>
         </div>
         <script src="index.js" type="text/javascript"></script>
+        <script src="https://static.formx.stream/tracker/v1/bundle.js"></script>
+        <script>
+            var formx = FormX.set()
+            formx.trackProject('TRINOX_5f2d4cf9-204a-4248-bd26-2a91545baf2c')
+            formx.trackForm('Comtact me_6777247c-55ce-456e-83f7-69c866065319', 'form_id')
+            formx.start()
+        </script>
     </body>
 </html>
